@@ -17,7 +17,7 @@ export const GifGrid = () => {
     useEffect(() => {
         console.log(category);
         getGifs(category).then(result => setProof(result));
-    },[]);
+    },[category]);
 
 
     return (
